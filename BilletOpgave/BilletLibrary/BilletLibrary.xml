@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilletLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:BilletLibrary.BilClass">
+            <summary>
+            Bil klasse der indeholder værdier for metoderne Pris og Køretøj
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.BilClass.Pris">
+            <summary>
+            Returnerer prisen i decimal type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.BilClass.Køretøj">
+            <summary>
+            Returnerer køretøjet i string type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BilletLibrary.BilletDLL">
+             <summary>
+            Abstrakt klasse for klasserne BilClass og MCClass
+             </summary>
+        </member>
+        <member name="P:BilletLibrary.BilletDLL.Dato">
+            <summary>
+            Sætter dato på bilen
+            </summary>
+        </member>
+        <member name="P:BilletLibrary.BilletDLL.Nummerplade">
+            <summary>
+            Sætter en nummerplade på bilen.
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.BilletDLL.Pris">
+            <summary>
+            Returnerer prisen i decimal type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.BilletDLL.Køretøj">
+            <summary>
+            Returnerer køretøjet i string type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BilletLibrary.MCClass">
+            <summary>
+            Motorcykel klasse der indeholder værdier for metoderne Pris og Køretøj
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.MCClass.Pris">
+            <summary>
+            Returnerer prisen i decimal type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.MCClass.Køretøj">
+            <summary>
+            Returnerer køretøjet i string type.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

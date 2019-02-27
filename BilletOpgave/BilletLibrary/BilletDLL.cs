@@ -1,36 +1,66 @@
 ﻿using System;
 
-namespace Bil
+namespace BilletLibrary
 {
-    public class BilletDLL
+    /// <summary>
+    ///Abstrakt klasse for klasserne BilClass og MCClass
+    /// </summary>
+    public abstract class BilletDLL
     {
-        class BilContent
+        private string _nummerplade;
+        private DateTime _dato;
+        private bool _rabatKort;
+
+        /// <summary>
+        /// Sætter sandt eller falsk på om bilen har BroBizz
+        /// </summary>
+        public bool RabatKort
         {
-            private string _nummerplade;
-            private DateTime _dato;
-
-            public DateTime Dato
+            get { return _rabatKort; }
+            set
             {
-                get { return _dato; }
-                set { _dato = value; }
+                _rabatKort = false;
+                if (true)
+                {
+                    _rabatKort = value;
+                }
             }
-
-            public string Nummerplade
-            {
-                get { return _nummerplade; }
-                set { _nummerplade = value; }
-            }
-
-            public decimal Pris()
-            {
-                return 240;
-            }
-
-            public string Køretøj()
-            {
-                return "Bil";
-            }
-
         }
+
+        /// <summary>
+        /// Sætter dato på bilen
+        /// </summary>
+        public DateTime Dato
+        {
+            get { return _dato; }
+            set { _dato = value; }
+        }
+        /// <summary>
+        /// Sætter en nummerplade på bilen.
+        /// </summary>
+        public string Nummerplade
+        {
+            get { return _nummerplade; }
+            set
+            {
+                if (Nummerplade.Length <= 7) { _nummerplade = value; }
+                else
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Returnerer prisen i decimal type.
+        /// </summary>
+        /// <returns></returns>
+        public abstract decimal Pris();
+
+        /// <summary>
+        /// Returnerer køretøjet i string type.
+        /// </summary>
+        /// <returns></returns>
+        public abstract string Køretøj();
     }
 }
