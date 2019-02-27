@@ -11,6 +11,7 @@ namespace BilletLibrary
         private DateTime _dato;
         private bool _rabatKort;
 
+
         /// <summary>
         /// Sætter sandt eller falsk på om bilen har BroBizz
         /// </summary>
