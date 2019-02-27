@@ -53,14 +53,14 @@ namespace UnitTestBilletOpgave
             //Assert
             Assert.AreEqual("MC", result);
         }
-        [TestMethod]
-        public void TestMethodBroBizz()
-        {
-            //Arrange
-            List<BilletDLL> BilList = new List<BilletDLL>();
-            BilList.Add(Bil);
-            //Act
-            //Assert
-        }
+        //[TestMethod]
+        //public void TestMethodBroBizz()
+        //{
+        //    //Arrange
+        //    List<BilletDLL> BilList = new List<BilletDLL>();
+        //    BilList.Add(Bil);
+        //    //Act
+        //    //Assert
+        //}
     }
 }
