@@ -62,5 +62,20 @@ namespace BilletLibrary
         /// </summary>
         /// <returns></returns>
         public abstract string Køretøj();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public static decimal BroBizz(decimal Pris, bool RabatKort)
+        {
+            decimal rabat = Pris * 0.05m;
+            decimal result = Pris;
+            if (RabatKort == true)
+            {
+                result -= rabat; 
+            }
+            return result;
+        }
     }
 }

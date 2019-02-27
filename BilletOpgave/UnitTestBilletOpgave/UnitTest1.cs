@@ -1,12 +1,14 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BilletLibrary;
 using System;
+using System.Collections.Generic;
 
 namespace UnitTestBilletOpgave
 {
     [TestClass]
     public class UnitTest1
     {
+        //Universal Arrange
         BilClass Bil = new BilClass();
         MCClass MC = new MCClass();
 
@@ -50,6 +52,15 @@ namespace UnitTestBilletOpgave
             //Act
             //Assert
             Assert.AreEqual("MC", result);
+        }
+        [TestMethod]
+        public void TestMethodBroBizz()
+        {
+            //Arrange
+            List<BilletDLL> BilList = new List<BilletDLL>();
+            BilList.Add(Bil);
+            //Act
+            //Assert
         }
     }
 }
