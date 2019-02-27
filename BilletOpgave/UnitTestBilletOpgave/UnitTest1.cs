@@ -16,10 +16,10 @@ namespace UnitTestBilletOpgave
         public void TestMethodBilPris()
         {
             //Arrange
-            var result = Bil.Pris();
+            
 
             //Act
-
+            var result = Bil.Pris();
             //Assert
             Assert.AreEqual(240, result);
         }
@@ -28,10 +28,10 @@ namespace UnitTestBilletOpgave
         public void TestMethodBilKøretøj()
         {
             //Arrange
-            var result = Bil.Køretøj();
+
 
             //Act
-
+            var result = Bil.Køretøj();
             //Assert
             Assert.AreEqual("Bil", result);
         }
@@ -39,8 +39,9 @@ namespace UnitTestBilletOpgave
         public void TestMethodMCPris()
         {
             //Arrange
-            var result = MC.Pris();
+
             //Act
+            var result = MC.Pris();
             //Assert
             Assert.AreEqual(125, result);
         }
@@ -48,8 +49,9 @@ namespace UnitTestBilletOpgave
         public void TestMethodMCKøretøj()
         {
             //Arrange
-            var result = MC.Køretøj();
+
             //Act
+            var result = MC.Køretøj();
             //Assert
             Assert.AreEqual("MC", result);
         }

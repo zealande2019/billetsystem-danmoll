@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BilletLibrary\BilletLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="BilletLibrary">
       <HintPath>..\BilletLibrary\bin\Debug\netcoreapp2.1\BilletLibrary.dll</HintPath>
     </Reference>
